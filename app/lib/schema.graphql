@@ -1,0 +1,22 @@
+input Input {
+  loggedAt: AWSTimestamp
+  id: String
+}
+
+type Mutation {
+  publish(input: Input): States
+}
+
+type Query {
+  getStates(Id: String, loggedAt: AWSTimestamp): States
+}
+
+type States {
+  loggedAt: AWSTimestamp
+  id: String
+}
+
+type Subscription {
+  onPublish(loggedAt: AWSTimestamp, id: String): States
+    @aws_subscribe(mutations: ["publish"])
+}

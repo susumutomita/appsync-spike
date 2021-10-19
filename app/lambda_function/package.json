@@ -1,0 +1,29 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.77",
+    "@types/node": "^16.10.9",
+    "typescript": "^4.4.3",
+    "@types/graphql": "0.12.4"
+  },
+  "dependencies": {
+    "aws-appsync": "4.1.2",
+    "aws-sdk": "^2.1006.0",
+    "graphql-tag": "2.11.0",
+    "node-fetch": "^2.2.0",
+    "isomorphic-fetch": "^3.0.0",
+    "moment": "^2.29.1"
+  },
+  "resolutions": {
+    "graphql-tag": "2.11.0"
+  }
+}

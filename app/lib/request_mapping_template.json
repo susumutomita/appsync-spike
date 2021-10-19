@@ -1,0 +1,7 @@
+{
+  "version": "2017-02-28",
+  "payload": {
+    "loggedAt": $util.toJson($context.arguments.input.loggedAt),
+    "id": $util.toJson($context.arguments.input.id)
+  }
+}
